@@ -25,7 +25,7 @@ class LoginUnittest(unittest.TestCase):
         except AssertionError as e:
             print(e)
 
-    #用户不存在
+    #用户不存在啊
     def test_login_nouser(self):
         data = {"phoneNumber": "15038118648", "passwd": "yuan1234"}
         r = self.session.post(self.login_url,data=data)
